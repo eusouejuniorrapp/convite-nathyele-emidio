@@ -1,41 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Gift, Copy, Check, MessageCircle, CalendarHeart } from 'lucide-react';
+import igrejaImg from './assets/images/igreja.png';
 
 const ChurchSketch = () => (
-  <svg viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[280px] mx-auto text-gold foil-shadow" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round">
-    {/* Base lines and stairs */}
-    <path d="M40 220 H260 M50 225 H250 M60 230 H240 M70 235 H230" />
-    
-    {/* Central Section */}
-    <path d="M100 220 V120 L150 90 L200 120 V220" />
-    <path d="M100 120 H200" strokeDasharray="2 2" />
-    
-    {/* Left Tower */}
-    <path d="M70 220 V100 M100 100 H70 L85 30 L100 100" />
-    <path d="M70 140 H100 M70 180 H100" strokeWidth="0.4" />
-    <path d="M85 70 V90" />
-    <path d="M80 110 H90 V130 A5 5 0 0 1 80 130 Z" />
-
-    {/* Right Tower */}
-    <path d="M230 220 V100 M200 100 H230 L215 30 L200 100" />
-    <path d="M200 140 H230 M200 180 H230" strokeWidth="0.4" />
-    <path d="M215 70 V90" />
-    <path d="M210 110 H220 V130 A5 5 0 0 1 210 130 Z" />
-
-    {/* Central Doors and Windows */}
-    <path d="M135 220 V180 A15 15 0 0 1 165 180 V220" />
-    <path d="M135 150 H165 V165 H135 Z" />
-    <circle cx="150" cy="130" r="10" />
-
-    {/* Crosses */}
-    <path d="M85 20 V30 M80 25 H90" />
-    <path d="M215 20 V30 M210 25 H220" />
-    <path d="M150 75 V85 M145 80 H155" />
-    
-    {/* Decorative side elements */}
-    <path d="M40 220 V160 L70 140 M260 220 V160 L230 140" strokeWidth="0.5"/>
-  </svg>
+  <img
+    src={igrejaImg}
+    alt="Igreja Nossa Senhora da Conceição"
+    className="church-reference-image mx-auto foil-shadow"
+  />
 );
 
 const Monogram = ({ className = "" }) => (
@@ -93,7 +66,7 @@ export default function App() {
                 
                 <button 
                   onClick={() => setIsOpen(true)}
-                  className="group flex flex-col items-center space-y-3 pb-8 transition-opacity hover:opacity-70 focus:outline-none"
+                  className="open-invite-cta group flex flex-col items-center space-y-3 pb-8 transition-opacity hover:opacity-70 focus:outline-none"
                 >
                   <span className="uppercase tracking-[0.2em] text-xs font-serif text-ink/60">Abrir Convite</span>
                   <div className="w-[1px] h-12 bg-gold/50 group-hover:h-16 transition-all duration-500 ease-out"></div>
