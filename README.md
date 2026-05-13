@@ -1,15 +1,20 @@
-# Convite Nathyele e Emídio
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Projeto independente em React + Vite.
+# Run and deploy your AI Studio app
 
-## Rodar localmente
+This contains everything you need to run your app locally.
 
-```bash
-npm install
-npm run dev
-```
+View your app in AI Studio: https://ai.studio/apps/daeef22e-866b-49ee-b020-e10ae570355e
 
-## Publicar na Vercel
+## Run Locally
 
-Suba esta pasta para um novo repositório no GitHub e conecte o repositório na Vercel.
-Atualização para novo deploy.
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
