@@ -1,8 +1,4 @@
 {
-  "name": "convite-nathyele-emidio",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,7 +9,10 @@
     "vite": "latest",
     "typescript": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "lucide-react": "latest"
   },
   "devDependencies": {}
 }
