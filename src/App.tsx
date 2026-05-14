@@ -166,7 +166,7 @@ export default function App() {
 
               {/* Extra Actions Grid */}
               <div className="grid grid-cols-1 gap-4 mx-2">
-                 <a href="https://wa.me/5585996529226?text=Ol%C3%A1!%20Confirmo%20minha%20presen%C3%A7a%20no%20casamento%20de%20Nathyele%20e%20Em%C3%ADdio." target="_blank" rel="noreferrer" className="insert-card p-4 flex flex-col items-center justify-center space-y-3 hover:-translate-y-1 transition-transform cursor-pointer">
+                 <a href="https://wa.me/5585996529226?text=Ol%C3%A1!%20Confirmo%20minha%20presen%C3%A7a%20no%20casamento%20de%20Nathyele%20e%20Em%C3%ADdio.%0A%0AMeu%20nome%20%C3%A9%3A%20%0AQuantidade%20de%20pessoas%3A%20" target="_blank" rel="noreferrer" className="insert-card p-4 flex flex-col items-center justify-center space-y-3 hover:-translate-y-1 transition-transform cursor-pointer">
                     <MessageCircle size={14} className="text-gold" />
                     <span className="font-serif uppercase text-[9px] tracking-[0.14em] text-center text-ink">Confirmar<br/>Presença</span>
                  </a>
