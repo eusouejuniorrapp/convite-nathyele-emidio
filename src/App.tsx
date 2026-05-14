@@ -80,7 +80,7 @@ export default function App() {
                   onClick={() => setIsOpen(true)}
                   className="open-invite-cta group flex flex-col items-center space-y-3 pb-8 transition-opacity hover:opacity-70 focus:outline-none"
                 >
-                  <span className="uppercase tracking-[0.2em] text-xs font-serif text-ink/60">Abrir Convite</span>
+                  <span className="uppercase tracking-[0.2em] text-sm font-serif text-ink/60">Abrir Convite</span>
                   <div className="w-[1px] h-12 bg-gold/50 group-hover:h-16 transition-all duration-500 ease-out"></div>
                 </button>
               </div>
