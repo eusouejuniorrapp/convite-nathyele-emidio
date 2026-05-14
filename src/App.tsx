@@ -80,22 +80,22 @@ export default function App() {
         <div className={`paper-bg flex-1 w-full pb-32 transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
           
           {/* Top Flap Area (Church) */}
-          <div className="w-full pt-16 pb-8 border-b border-gold/10 relative">
+          <div className="w-full pt-16 pb-4 border-b border-gold/10 relative">
             <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-black/5 to-transparent"></div>
             <ChurchSketch />
           </div>
 
           {/* Main Body */}
-          <main className="w-full px-4 pt-16 text-center">
+          <main className="w-full px-4 pt-8 text-center">
             
-            <Monogram className="mb-12 scale-90" />
+            <Monogram className="mb-8 scale-90" />
 
-            <p className="font-serif text-[10px] tracking-widest leading-loose text-ink/70 max-w-sm mx-auto mb-16 uppercase px-2">
+            <p className="font-serif text-[11.5px] tracking-widest leading-[2.05] text-ink max-w-sm mx-auto mb-12 uppercase px-2">
               "Deus marcou o tempo certo para cada coisa<br/>
               E tudo quanto ele faz dura eternamente." - Ecl 3:11, 14B:
             </p>
 
-            <div className="flex justify-between items-start font-serif uppercase text-[8px] tracking-[0.15em] text-ink/80 mb-12 px-1 leading-loose">
+            <div className="flex justify-between items-start font-serif uppercase text-[9.5px] tracking-[0.14em] text-ink mb-10 px-1 leading-[1.9]">
               <div className="text-left w-1/2 pr-1">
                 SEBASTIÃO SOUZA DA COSTA<br/>
                 MARIA EDINEUZA FREITAS PINTO
@@ -106,17 +106,17 @@ export default function App() {
               </div>
             </div>
 
-            <p className="font-serif text-[9px] tracking-[0.2em] text-ink/60 mb-16 uppercase">
+            <p className="font-serif text-[10.5px] tracking-[0.18em] text-ink mb-12 uppercase">
               Com a bênção de Deus e de seus pais
             </p>
 
             {/* Names */}
-            <h1 className="font-script text-6xl text-gold-dark mb-16 transform -rotate-2 foil-shadow" style={{ lineHeight: '1.2' }}>
-              Nathyele e Emidio
+            <h1 className="font-script text-[4.35rem] text-gold-dark mb-12 transform -rotate-1 foil-shadow" style={{ lineHeight: '1.2' }}>
+              Nathyele e Emídio
             </h1>
 
             {/* Details */}
-            <div className="font-serif text-[10px] tracking-[0.15em] leading-loose text-ink/80 mb-24 w-full">
+            <div className="font-serif text-[11.5px] tracking-[0.13em] leading-[2.05] text-ink mb-20 w-full">
               <p className="mb-6 px-2">
                 CONVIDAM PARA A CERIMÔNIA RELIGIOSA DE SEU CASAMENTO,<br/>
                 A REALIZAR-SE ÀS DEZENOVE HORAS E TRINTA MINUTOS<br/>
@@ -142,8 +142,8 @@ export default function App() {
               <div className="insert-card p-6 flex flex-col items-center justify-center text-center space-y-6 mx-2">
                 
                 <div>
-                  <h3 className="font-serif uppercase tracking-[0.2em] text-[9px] text-ink/60 mb-3">Sugestão de Presentes</h3>
-                  <a href="https://noivos.casar.com/nathyele-e-emidio/" target="_blank" rel="noreferrer" className="inline-flex items-center space-x-2 font-serif text-[8px] tracking-[0.2em] hover:text-gold transition-colors">
+                  <h3 className="font-serif uppercase tracking-[0.2em] text-[10px] text-ink mb-3">Sugestão de Presentes</h3>
+                  <a href="https://noivos.casar.com/nathyele-e-emidio/" target="_blank" rel="noreferrer" className="inline-flex items-center space-x-2 font-serif text-[9px] tracking-[0.18em] hover:text-gold transition-colors">
                     <Gift size={10} />
                     <span>LISTA DE PRESENTES VIRTUAL</span>
                   </a>
@@ -152,15 +152,15 @@ export default function App() {
                 <div className="w-12 h-[1px] bg-gold/30"></div>
 
                 <div className="w-full">
-                  <h3 className="font-serif uppercase tracking-[0.2em] text-[9px] text-ink/60 mb-2">Chave PIX</h3>
+                  <h3 className="font-serif uppercase tracking-[0.2em] text-[10px] text-ink mb-2">Chave PIX</h3>
                   <button 
                     onClick={handleCopyPix}
-                    className="font-serif text-[9px] tracking-widest flex items-center justify-center space-x-2 w-full hover:text-gold transition-colors group"
+                    className="font-serif text-[10px] tracking-widest flex items-center justify-center space-x-2 w-full hover:text-gold transition-colors group"
                   >
                     <span className="select-all">88999259007</span>
                     {copied ? <Check size={10} className="text-green-600" /> : <Copy size={10} className="opacity-50 group-hover:opacity-100" />}
                   </button>
-                  <p className="font-serif text-[7.5px] tracking-wider text-ink/50 mt-1 uppercase">(Jéssica Nathyele Freitas Souza)</p>
+                  <p className="font-serif text-[8.5px] tracking-wider text-ink/70 mt-1 uppercase">(Jéssica Nathyele Freitas Souza)</p>
                 </div>
               </div>
 
@@ -168,11 +168,11 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4 mx-2">
                  <a href="https://wa.me/?text=Olá!%20Gostaria%20de%20confirmar%20minha%20presença%20no%20casamento%20de%20Nathyele%20e%20Emídio!" target="_blank" rel="noreferrer" className="insert-card p-4 flex flex-col items-center justify-center space-y-3 hover:-translate-y-1 transition-transform cursor-pointer">
                     <MessageCircle size={14} className="text-gold" />
-                    <span className="font-serif uppercase text-[8px] tracking-[0.15em] text-center">Confirmar<br/>Presença</span>
+                    <span className="font-serif uppercase text-[9px] tracking-[0.14em] text-center text-ink">Confirmar<br/>Presença</span>
                  </a>
                  <a href="#" className="insert-card p-4 flex flex-col items-center justify-center space-y-3 hover:-translate-y-1 transition-transform cursor-pointer">
                     <MapPin size={14} className="text-gold" />
-                    <span className="font-serif uppercase text-[8px] tracking-[0.15em] text-center">Como<br/>Chegar</span>
+                    <span className="font-serif uppercase text-[9px] tracking-[0.14em] text-center text-ink">Como<br/>Chegar</span>
                  </a>
               </div>
 
