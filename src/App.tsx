@@ -2,12 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Gift, Copy, Check, MessageCircle, Church, PartyPopper } from 'lucide-react';
 import igrejaImg from './assets/images/igreja.png';
+import monogramaGold from './assets/images/monograma-ne-gold.png';
 
 const ChurchSketch = () => (
   <img
     src={igrejaImg}
     alt="Igreja Nossa Senhora da Conceição"
     className="church-reference-image mx-auto foil-shadow"
+  />
+);
+
+
+const CoverMonogram = () => (
+  <img
+    src={monogramaGold}
+    alt="Monograma Nathyele e Emídio"
+    className="cover-monogram-gold"
   />
 );
 
@@ -56,7 +66,9 @@ export default function App() {
                 </svg>
               </div>
 
-              <div className="flex-1"></div>
+              <div className="cover-monogram-wrap">
+                <CoverMonogram />
+              </div>
 
               {/* Bottom Section of Cover */}
               <div className="flex-1 flex flex-col items-center justify-end pb-24 w-full px-8 relative">
@@ -143,7 +155,7 @@ export default function App() {
                 
                 <div>
                   <h3 className="font-serif uppercase tracking-[0.2em] text-[10px] text-ink mb-3">Sugestão de Presentes</h3>
-                  <a href="https://noivos.casar.com/nathyele-e-emidio/" target="_blank" rel="noreferrer" className="inline-flex items-center space-x-2 font-serif text-[9px] tracking-[0.18em] hover:text-gold transition-colors">
+                  <a href="https://noivos.casar.com/nathyele-e-emidio/" target="_blank" rel="noreferrer" className="gift-virtual-link inline-flex items-center space-x-2 font-serif text-[9px] tracking-[0.18em] hover:text-gold transition-colors">
                     <Gift size={10} />
                     <span>LISTA DE PRESENTES VIRTUAL</span>
                   </a>
