@@ -103,3 +103,40 @@ body {
 main p, main div {
   text-rendering: optimizeLegibility;
 }
+
+
+/* Monograma dourado adicionado apenas na capa inicial */
+.cover-monogram-wrap {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cover-monogram-gold {
+  width: 118px;
+  max-width: 34%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  opacity: 0.95;
+  filter: drop-shadow(0 1px 1px rgba(90, 60, 20, 0.08));
+}
+
+/* Realce discreto para deixar claro que a lista de presentes é clicável */
+.gift-virtual-link {
+  color: var(--color-ink);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.75);
+  padding: 0.2rem 0.35rem 0.28rem;
+  background: rgba(197, 168, 128, 0.08);
+  border-radius: 999px;
+}
+
+.gift-virtual-link:hover {
+  background: rgba(197, 168, 128, 0.14);
+  border-bottom-color: var(--color-gold);
+}
